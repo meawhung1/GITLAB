@@ -5,11 +5,12 @@ void main()
   int i;
   do
   {
-    printf("What is your Name? ");
+    printf("Enter your Name? ");//Change "What is" to "Enter"
     scanf("%s", Name);
     do
     {
-      printf("Enter your blood group [A, B, AB, or O]? ");
+      printf("Enter your blood group [a, b, ab, or o]? ");
+	//Change [A, B, AB, or O] to [a, b, ab, or o]
       scanf("%s", G);
 
       if (strcmp(G, "A") !=0  &&
