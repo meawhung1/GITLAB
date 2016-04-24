@@ -12,26 +12,27 @@ void main()
       printf("Enter your blood group [A, B, AB, or O]? ");
       scanf("%s", G);
 
-      if (strcmp(G, "A") !=0  &&
-                            strcmp(G, "B") !=0  &&
-                            strcmp(G, "AB") !=0   &&
-                            strcmp(G, "O") !=0 )
+      if (strcmp(G, "a") !=0  &&
+                            strcmp(G, "b") !=0  &&
+                            strcmp(G, "ab") !=0   &&
+                            strcmp(G, "o") !=0 ) 
+	// Change UPPER case blood group to lower case blood group
         printf("Blood group %s is incorrect! Please try again.\n", G);
-    }  while (strcmp(G, "A") !=0  &&
-                            strcmp(G, "B") !=0  &&
-                            strcmp(G, "AB") !=0   &&
-                            strcmp(G, "O") !=0 );
-    if (strcmp(G,"A") ==0)
+    }  while (strcmp(G, "a") !=0  &&
+                            strcmp(G, "b") !=0  &&
+                            strcmp(G, "ab") !=0   &&
+                            strcmp(G, "o") !=0 );
+    if (strcmp(G,"a") ==0)
     {
       printf("%s, A. Hey, you can give blood to: A, AB.\n", Name);
       printf("  You can receive blood from: A, O.\n");
     }
-    else if (strcmp(G, "B") ==0)
+    else if (strcmp(G, "b") ==0)
     {
       printf("%s, B. Well, you can give blood to: B, AB.\n", Name);
       printf("  You can receive blood from: B, O.\n");
     }
-    else if (strcmp(G, "AB") == 0)
+    else if (strcmp(G, "ab") == 0)
     {
       printf("%s, AB. Oh my God, you can give blood only to: AB.\n", Name);
       printf("  Wow, you can receive blood from all: O, A, B, AB.\n");
